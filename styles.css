@@ -260,6 +260,34 @@ button {
     text-align: center;
 }
 
+.some {
+    display: flex;
+    justify-content: center;
+    margin-top: 22px;
+}
+
+.some a {
+    width: 60px;
+    height: 60px;
+    text-align: none;
+    text-decoration: none;
+    margin: 0 18px;
+    border-radius: 50%;
+    background-color: #101117;
+    color: white;
+}
+
+.some a .fa-brands {
+    font-size: 40px;
+    line-height: 60px;
+}
+
+.some a:hover {
+    background-color:#EEFD39;
+    color: rgb(0, 0, 0);
+    transition: 0.5s;
+}
+
 
 
 
