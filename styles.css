@@ -1,0 +1,323 @@
+/*styling - generelt*/
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none; /*fjerner streg under links*/
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    line-height: 40px;
+}
+
+
+/*styling - navigation*/
+nav {
+    height: 120px;
+    width: 100%;
+    background-color: #101117;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    width: auto;
+    margin: 0;
+}
+
+.logo {
+    margin-left: 20px;
+    margin-top: 10px;
+    width: 100px;
+}
+
+.nav-list {
+    position: fixed;
+    width: 100%;
+    height: 0vh;
+    top: 120px;
+    background: #101117;
+    float: right;
+    text-align: center;
+    transition: all .5s;
+}
+
+.nav-list li {
+    display: none; /*0 fordi den kun er synlig når check er checked*/
+    line-height: 30px;
+    margin: 50px 0;
+    transition: all .5s;
+}
+
+.nav-list li a {
+    color: white;
+    font-size: 19px;
+    font-family: 'Playfair Display', serif;
+}
+
+.nav-list li a:hover {
+    color: #EEFD39;
+    transition: 1s;
+}
+
+.hamburger-btn {
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    color: white;
+    float: right;
+    margin-right: 40px; 
+    cursor: pointer;
+}
+
+#check { /*skjuler tjek boksen */
+    display: none;
+}
+
+#check:checked ~ .nav-list {
+    height: 370px;
+}
+
+#check:checked ~ .hamburger-btn {
+    color: #EEFD39;
+}
+
+
+
+#check:checked ~ .nav-list li {
+    display: block;
+}
+
+
+/*forsøg med headeren lol*/
+.welcome {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 750px;
+    background-color: #101117;
+    color: white;
+}
+
+.text-header {
+    padding-left: 50px;
+    padding-top: 70px;
+    align-self: flex-start;
+}
+
+.text-header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 43px;
+    letter-spacing: 3px;
+    line-height: 1.05em;
+}
+
+.text-header p {
+    padding-top: 17px;
+
+}
+
+.welcome p {
+    justify-self:end;
+    align-self: flex-end;
+    
+    
+}
+.welcome img {
+    width: 100px;
+    
+}
+
+/*om mig wave*/
+
+.wave-container {
+    position: relative;
+}
+
+.wave-container img {
+    width: 100%;
+    height: 400px;
+    position: relative;
+    top: -140px;
+    object-position: bottom;
+    
+} 
+
+.wave-content {
+    position: absolute;
+    top: 20px;
+    bottom: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    color: white;   
+}
+
+/* kompetencer */
+.kompetencer {
+    background-color: #ffffff;
+    color: #101117;
+    width: 100%;
+    height: 400px;
+    margin-top: -150px;
+    
+}
+
+.kompetencer h2 {
+    padding-top: 60px;
+    text-align: center;
+}
+
+.programmer {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 80px;
+}
+
+/*PORTFOLIO*/
+.portfolio {
+    background-color: #FFC9C9;
+    padding-bottom: 300px;
+}
+
+.portfolio h2 {
+    padding-top: 60px;
+    text-align: center;
+}
+
+.portfolio p {
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 30px;
+}
+
+.portfolio-content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.portfolio-content img {
+    width: 300px;
+    height: 300px;
+}
+
+/*kontakt*/
+
+.kontakt img {
+    width: 100%;
+    height: 600px;
+    position: relative;
+    top: -280px;
+    object-position: bottom;
+}
+
+input {
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+    border: solid 2px white;
+    font-family: 'Poppins', sans-serif;
+    padding: 10px;
+    margin: 10px;
+    margin-left: 50px;
+}
+
+.kontakt-felt {
+    position: absolute;
+    margin-top: -630px;
+}
+
+
+.kontakt-felt h2 {
+    padding-left: 50px;
+    color: white;
+}
+
+button {
+    width: 80px;
+    border: solid 2px white;
+    font-family: 'Poppins', sans-serif;
+    padding: 10px;
+    margin: 10px;
+    margin-left: 170px;
+}
+
+/*footer*/
+.footer {
+    margin-top: -180px;
+    text-align: center;
+}
+
+
+
+
+@media only screen and (min-width: 820px) {
+
+    h2 {
+        font-size: 30px;
+        line-height: 70px;
+    }
+    .hamburger-btn {
+        display: none;
+    }
+
+    .nav-list {
+        position: relative;
+        height: 100px;
+        top: 0;
+        background: none;
+        float: right;
+        text-align: right;
+        margin-right: 25px;
+        transition: none;
+    }
+
+    .nav-list li {
+        display: inline-block;
+        opacity: 1;
+        line-height: 120px;
+        margin: 0 20px;
+        transition: none;
+    }
+
+    .text-header {
+        padding-left: 100px;
+    }
+
+    .text-header h1{
+        font-size: 100px;
+    }
+
+
+    .wave-content {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+
+    .portfolio p {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    .portfolio-content img {
+        width: 500px;
+        height: 500px;
+
+    }
+}
+
+
+
