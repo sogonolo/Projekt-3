@@ -54,7 +54,7 @@ nav {
 }
 
 .nav-list li {
-    display: none; /*0 fordi den kun er synlig når check er checked*/
+    display: none; /*none fordi den kun er synlig når check er checked*/
     line-height: 30px;
     margin: 50px 0;
     transition: all .5s;
@@ -68,8 +68,10 @@ nav {
 
 .nav-list li a:hover {
     color: #EEFD39;
-    transition: 1s;
+    transition: 0.5s;
 }
+
+
 
 .hamburger-btn {
     display: flex;
@@ -80,6 +82,8 @@ nav {
     margin-right: 40px; 
     cursor: pointer;
 }
+
+
 
 #check { /*skjuler tjek boksen */
     display: none;
@@ -229,10 +233,19 @@ input {
     width: 200px;
     border: solid 2px white;
     font-family: 'Poppins', sans-serif;
+    color: #101117;
     padding: 10px;
     margin: 10px;
     margin-left: 50px;
+    opacity: 0.7;
 }
+
+input:focus {
+    outline: solid 2px rgb(255, 255, 255);
+    opacity: 1;
+}
+
+
 
 .kontakt-felt {
     position: absolute;
@@ -252,11 +265,18 @@ button {
     padding: 10px;
     margin: 10px;
     margin-left: 170px;
+    background: white;
+}
+
+button:hover {
+    background-color: #EEFD39;
+    border: solid 2px #101117;
 }
 
 /*footer*/
 .footer {
     margin-top: -180px;
+    padding-bottom: 120px;
     text-align: center;
 }
 
