@@ -140,6 +140,7 @@ nav {
 }
 .welcome img {
     width: 100px;
+    overflow: hidden;
     
 }
 
@@ -184,8 +185,16 @@ nav {
 
 .programmer {
     display: flex;
-    justify-content: space-around;
-    padding-top: 80px;
+    flex-wrap: wrap;
+    gap: 18px;
+    justify-content: center;
+    margin: 20px;
+    margin-top: 40px;
+}
+
+.programmer img {
+    width: 90px;
+    height: 90px;
 }
 
 /*PORTFOLIO*/
@@ -238,6 +247,7 @@ input {
     margin: 10px;
     margin-left: 50px;
     opacity: 0.7;
+    border-radius: 2px;
 }
 
 input:focus {
@@ -266,11 +276,16 @@ button {
     margin: 10px;
     margin-left: 170px;
     background: white;
+    border-radius: 2px;
 }
 
 button:hover {
     background-color: #EEFD39;
-    border: solid 2px #101117;
+    /*border: solid 2px #101117;*/
+    border: solid 4px #EEFD39;
+    top: -1px;
+    width: 82px;
+    margin-left: 168px;
 }
 
 /*footer*/
@@ -289,7 +304,6 @@ button:hover {
 .some a {
     width: 60px;
     height: 60px;
-    text-align: none;
     text-decoration: none;
     margin: 0 18px;
     border-radius: 50%;
