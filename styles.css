@@ -104,6 +104,9 @@ nav {
 }
 
 
+
+
+
 /*forsøg med headeren lol*/
 .welcome {
     display: flex;
@@ -228,6 +231,10 @@ nav {
 
 /*kontakt*/
 
+.kontakt {
+    width: 100%;
+}
+
 .kontakt img {
     width: 100%;
     height: 600px;
@@ -236,10 +243,16 @@ nav {
     object-position: bottom;
 }
 
+.kontakt-felt {
+    position: absolute;
+    width: 100%;
+    margin-top: -630px;
+}
+
 input {
     display: flex;
     flex-direction: row;
-    width: 200px;
+    width: 77%;
     border: solid 2px white;
     font-family: 'Poppins', sans-serif;
     color: #101117;
@@ -256,13 +269,6 @@ input:focus {
 }
 
 
-
-.kontakt-felt {
-    position: absolute;
-    margin-top: -630px;
-}
-
-
 .kontakt-felt h2 {
     padding-left: 50px;
     color: white;
@@ -274,9 +280,10 @@ button {
     font-family: 'Poppins', sans-serif;
     padding: 10px;
     margin: 10px;
-    margin-left: 170px;
+    margin-left: 50px;
     background: white;
     border-radius: 2px;
+
 }
 
 button:hover {
@@ -285,7 +292,7 @@ button:hover {
     border: solid 4px #EEFD39;
     top: -1px;
     width: 82px;
-    margin-left: 168px;
+    margin-left: 50px;
 }
 
 /*footer*/
@@ -335,6 +342,8 @@ button:hover {
         display: none;
     }
 
+
+
     .nav-list {
         position: relative;
         height: 100px;
@@ -369,6 +378,11 @@ button:hover {
     }
 
 
+    .programmer {
+        gap: 70px;
+    }
+
+
     .portfolio p {
         padding-left: 100px;
         padding-right: 100px;
@@ -378,6 +392,10 @@ button:hover {
         width: 500px;
         height: 500px;
 
+    }
+
+    input {
+        width: 50%;
     }
 }
 
