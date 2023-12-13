@@ -39,7 +39,7 @@ nav {
 .logo {
     margin-left: 20px;
     margin-top: 10px;
-    width: 100px;
+    width: 120px;
 }
 
 .nav-list {
@@ -112,7 +112,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    height: 750px;
+    height: 790px;
     background-color: #101117;
     color: white;
 }
@@ -155,16 +155,16 @@ nav {
 
 .wave-container img {
     width: 100%;
-    height: 400px;
+    height: 760px;
     position: relative;
-    top: -140px;
+    top: -300px;
     object-position: bottom;
     
 } 
 
 .wave-content {
     position: absolute;
-    top: 20px;
+    top: -60px;
     bottom: 20px;
     margin-left: 50px;
     margin-right: 50px;
@@ -177,7 +177,7 @@ nav {
     color: #101117;
     width: 100%;
     height: 400px;
-    margin-top: -150px;
+    margin-top: -310px;
     
 }
 
@@ -207,8 +207,9 @@ nav {
 }
 
 .portfolio h2 {
-    padding-top: 60px;
+    padding-top: 40px;
     text-align: center;
+    line-height: 120px;
 }
 
 .portfolio p {
@@ -222,12 +223,34 @@ nav {
     justify-content: center;
     flex-wrap: wrap;
     gap: 30px;
+    width: 100%;
 }
 
+
 .portfolio-content img {
-    width: 300px;
-    height: 300px;
+    width: 330px;
+    height: 330px;
+    border-radius: 2px;
+    display: block;
+    padding: 13px;
 }
+
+.produkter {
+    width: 330px;
+    height: 390px;
+    background-color: rgb(255, 242, 242);
+    border-radius: 2px;
+}
+
+.tekst {
+    padding-left: 13px;
+}
+
+.tekst p {
+    padding-left: 13px;
+    margin-left: -13px;
+}
+
 
 /*kontakt*/
 
@@ -335,8 +358,8 @@ button:hover {
 @media only screen and (min-width: 820px) {
 
     h2 {
-        font-size: 30px;
-        line-height: 70px;
+        font-size: 35px;
+        line-height: 80px;
     }
     .hamburger-btn {
         display: none;
@@ -371,28 +394,46 @@ button:hover {
         font-size: 100px;
     }
 
-
+    /*om mig*/
     .wave-content {
         padding-left: 100px;
         padding-right: 100px;
     }
 
+    .wave-container img {
+        height: 600px;
+    }
 
+    /*kompetencer*/
     .programmer {
         gap: 70px;
     }
 
+    /*portfolio*/
+    .produkter {
+        width: 450px;
+        height: 510px;
+    }
+
+    .portfolio-content img {
+        width: 450px;
+        height: 450px;
+    }
+
+    .portfolio-content {
+        gap: 50px;
+        padding: 15px;
+    }
 
     .portfolio p {
         padding-left: 100px;
         padding-right: 100px;
     }
 
-    .portfolio-content img {
-        width: 500px;
-        height: 500px;
-
+    .tekst p {
+        margin-left: -100px;
     }
+  
 
     input {
         width: 50%;
