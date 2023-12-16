@@ -1,4 +1,4 @@
-/*styling - generelt*/
+/*generelt*/
 * {
     padding: 0;
     margin: 0;
@@ -20,14 +20,15 @@ h2 {
 }
 
 
-/*styling - navigation*/
+/*navigation*/
 nav {
-    height: 120px;
+    height: 100px;
     width: 100%;
     background-color: #101117;
     display: flex;
     justify-content: space-between;
-
+    position:fixed;
+    z-index: 5;
 }
 
 .logo-container {
@@ -104,10 +105,7 @@ nav {
 }
 
 
-
-
-
-/*forsøg med headeren lol*/
+/*headeren*/
 .welcome {
     display: flex;
     flex-direction: row;
@@ -116,6 +114,8 @@ nav {
     height: 790px;
     background-color: #101117;
     color: white;
+    overflow: hidden;
+    padding-top: 80px;
 }
 
 .text-header {
@@ -139,7 +139,7 @@ nav {
 
 
 .welcome img {
-    width: 80%;
+    width: 100%;
     max-width: 614.4px;
     min-width: 384px;
     height: auto;
@@ -149,7 +149,7 @@ nav {
     transform: translateX(-200px);
 }
 
-/*om mig wave*/
+/*om mig*/
 
 .wave-container {
     position: relative;
@@ -166,7 +166,7 @@ nav {
 
 .wave-content {
     position: absolute;
-    top: -60px;
+    top: -30px;
     bottom: 20px;
     margin-left: 50px;
     margin-right: 50px;
@@ -178,13 +178,13 @@ nav {
     background-color: #ffffff;
     color: #101117;
     width: 100%;
-    height: 400px;
+    height: 500px;
     margin-top: -310px;
     
 }
 
 .kompetencer h2 {
-    padding-top: 60px;
+    padding-top: 90px;
     text-align: center;
 }
 
@@ -194,7 +194,7 @@ nav {
     gap: 18px;
     justify-content: center;
     margin: 20px;
-    margin-top: 40px;
+    margin-top: 50px;
 }
 
 .programmer img {
@@ -209,15 +209,9 @@ nav {
 }
 
 .portfolio h2 {
-    padding-top: 40px;
+    padding-top: 60px;
     text-align: center;
-    line-height: 120px;
-}
-
-.portfolio p {
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-bottom: 30px;
+    line-height: 160px;
 }
 
 .portfolio-content {
@@ -384,7 +378,7 @@ button:hover {
     .nav-list li {
         display: inline-block;
         opacity: 1;
-        line-height: 120px;
+        line-height: 100px;
         margin: 0 20px;
         transition: none;
     }
@@ -413,6 +407,7 @@ button:hover {
         margin-right: auto; 
         align-self: flex-end;
         transform: translateX(0px);
+        transform: translateY(80px);
     }
 
     /*om mig*/
