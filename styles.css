@@ -85,7 +85,6 @@ nav {
 }
 
 
-
 #check { /*skjuler tjek boksen */
     display: none;
 }
@@ -111,8 +110,9 @@ nav {
 /*forsøg med headeren lol*/
 .welcome {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: flex-start;
     height: 790px;
     background-color: #101117;
     color: white;
@@ -121,7 +121,6 @@ nav {
 .text-header {
     padding-left: 50px;
     padding-top: 70px;
-    align-self: flex-start;
 }
 
 .text-header h1 {
@@ -138,16 +137,16 @@ nav {
 
 }
 
-.welcome p {
-    justify-self:end;
-    align-self: flex-end;
-    
-    
-}
+
 .welcome img {
-    width: 100px;
-    overflow: hidden;
-    
+    width: 80%;
+    max-width: 614.4px;
+    min-width: 384px;
+    height: auto;
+    max-height: 900px;
+    min-height: 515px; 
+    align-self: flex-end;
+    transform: translateX(-200px);
 }
 
 /*om mig wave*/
@@ -158,7 +157,7 @@ nav {
 
 .wave-container img {
     width: 100%;
-    height: 760px;
+    height: 824px;
     position: relative;
     top: -300px;
     object-position: bottom;
@@ -401,6 +400,19 @@ button:hover {
     .text-header p {
         width: 500px;
         font-size: 18px;
+    }
+
+
+    .welcome img {
+        width: 80%;
+        max-width: 614.4px;
+        min-width: 384px;
+        height: auto;
+        max-height: 900px;
+        min-height: 515px; 
+        margin-right: auto; 
+        align-self: flex-end;
+        transform: translateX(0px);
     }
 
     /*om mig*/
