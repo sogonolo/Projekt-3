@@ -318,7 +318,7 @@ button:hover {
 /*footer*/
 .footer {
     margin-top: -180px;
-    padding-bottom: 120px;
+    padding-bottom: 50px;
     text-align: center;
 }
 
@@ -347,6 +347,11 @@ button:hover {
     background-color:#EEFD39;
     color: rgb(0, 0, 0);
     transition: 0.5s;
+}
+
+.footer p {
+    padding-top: 40px;
+    color: rgb(113, 113, 113);
 }
 
 
